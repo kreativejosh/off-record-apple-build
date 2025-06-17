@@ -87,20 +87,8 @@ const Index = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative px-6 min-h-[90vh] flex items-end">
+      <section className="relative px-6 min-h-[90vh] flex items-center">
         <div className="mx-auto max-w-7xl w-full relative">
-          {/* Tool Logos - Left Side */}
-          <div className="absolute left-0 top-1/2 -translate-y-1/2 space-y-8">
-            <div className="text-sm text-apple-gray-400 opacity-60">Framer</div>
-            <div className="text-sm text-apple-gray-400 opacity-60">Webflow</div>
-            <div className="text-sm text-apple-gray-400 opacity-60">WordPress</div>
-            <div className="text-sm text-apple-gray-400 opacity-60">Lovable.dev</div>
-            <div className="text-sm text-apple-gray-400 opacity-60">Bolt.new</div>
-            <div className="text-sm text-apple-gray-400 opacity-60">Cursor.com</div>
-            <div className="text-sm text-apple-gray-400 opacity-60">Replit.com</div>
-            <div className="text-sm text-apple-gray-400 opacity-60">V0</div>
-          </div>
-
           {/* Circular Arrow - Right Side */}
           <div className="absolute right-0 top-1/2 -translate-y-1/2">
             <div className="w-16 h-16 border border-apple-gray-600 rounded-full flex items-center justify-center">
@@ -108,17 +96,29 @@ const Index = () => {
             </div>
           </div>
 
-          {/* Main Content - Bottom Left */}
-          <div className="pb-20 max-w-4xl">
+          {/* Main Content - Center Left */}
+          <div className="max-w-4xl -mt-20">
             <h1 className="text-6xl lg:text-8xl font-light tracking-tight text-white mb-8 leading-none">
               The zero to one<br />
               hundred studio.
             </h1>
             <div className="w-full h-px bg-apple-gray-600 mb-8"></div>
-            <p className="text-xl lg:text-2xl text-apple-gray-300 font-light leading-relaxed max-w-3xl">
+            <p className="text-xl lg:text-2xl text-apple-gray-300 font-light leading-relaxed max-w-3xl mb-[200px]">
               Strategic branding, <span className="underline">websites</span>, <span className="underline">digital products</span> and growth<br />
               for forward-thinking brands.
             </p>
+
+            {/* Tool Logos - Under Supporting Text */}
+            <div className="flex flex-wrap gap-x-8 gap-y-4">
+              <div className="text-sm text-apple-gray-400 opacity-60">Framer</div>
+              <div className="text-sm text-apple-gray-400 opacity-60">Webflow</div>
+              <div className="text-sm text-apple-gray-400 opacity-60">WordPress</div>
+              <div className="text-sm text-apple-gray-400 opacity-60">Lovable.dev</div>
+              <div className="text-sm text-apple-gray-400 opacity-60">Bolt.new</div>
+              <div className="text-sm text-apple-gray-400 opacity-60">Cursor.com</div>
+              <div className="text-sm text-apple-gray-400 opacity-60">Replit.com</div>
+              <div className="text-sm text-apple-gray-400 opacity-60">V0</div>
+            </div>
           </div>
 
           {/* Bottom Status Bar */}
