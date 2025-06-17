@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, Star } from "lucide-react";
 
 const Index = () => {
   const features = [
@@ -180,31 +180,79 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Instructor Section */}
+      {/* Instructor Section - Matching Image 2 Layout */}
       <section className="px-6 py-20">
-        <div className="mx-auto max-w-4xl">
-          <div className="apple-card text-center">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-8">
-              🧠 Meet Your Instructor
-            </h2>
-            <h3 className="text-2xl font-semibold mb-8 text-apple-blue-500">
-              Ifunanya "KreativeJosh" Onwughalu
-            </h3>
-            <div className="grid md:grid-cols-2 gap-8 text-left">
-              <div className="space-y-4 text-apple-gray-300">
-                <p>• 2x founder.</p>
-                <p>• Raised funding to build B2B lending infra in Africa (EnvoyX).</p>
-                <p>• UI/UX, frontend, product strategy expert.</p>
+        <div className="mx-auto max-w-7xl">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            {/* Left Side - Text Content */}
+            <div className="space-y-8">
+              <div>
+                <h2 className="text-4xl lg:text-5xl font-light text-white mb-4 leading-tight">
+                  Hey, I'm Ifunanya,<br />
+                  I've been there too.
+                </h2>
               </div>
-              <div className="space-y-4 text-apple-gray-300">
-                <p>• Competed in the World's Largest Hackathon (Bolt.new).</p>
-                <p>• Mentor to founders at Techstars Startup Weekend & Designlab.</p>
-                <p>• Builder of real apps using Bolt.new, Lovable.dev, Replit, Cursor.</p>
+              
+              <div className="space-y-6 text-lg text-apple-gray-300 leading-relaxed">
+                <p>
+                  I know exactly how it feels to stare at your inbox, wondering when the next client will show up. 
+                  To feel like no matter how hard you work on your app idea, you're stuck in the same cycle — 
+                  complicated development, endless costs, and questioning if your idea will ever see the light of day.
+                </p>
+                
+                <p className="text-white">It didn't...</p>
+                
+                <p>
+                  ...until I figured out how to <strong className="text-white">position myself as the go-to 
+                  founder for AI-powered no-code solutions</strong>.
+                </p>
+                
+                <p>
+                  Since then, I've helped hundreds of founders like you escape the complex development trap, 
+                  launch MVPs in weeks, and build businesses they're proud of.
+                </p>
+              </div>
+
+              {/* Rating Section */}
+              <div className="flex items-center space-x-4 pt-8">
+                <div className="flex items-center space-x-6">
+                  <div className="flex space-x-1">
+                    <div className="w-8 h-8 rounded-full bg-apple-gray-700 border border-apple-gray-600"></div>
+                    <div className="w-8 h-8 rounded-full bg-apple-gray-700 border border-apple-gray-600 -ml-2"></div>
+                    <div className="w-8 h-8 rounded-full bg-apple-gray-700 border border-apple-gray-600 -ml-2"></div>
+                    <div className="w-8 h-8 rounded-full bg-apple-gray-700 border border-apple-gray-600 -ml-2"></div>
+                    <div className="w-8 h-8 rounded-full bg-apple-gray-700 border border-apple-gray-600 -ml-2"></div>
+                  </div>
+                  <div className="text-sm">
+                    <div className="flex items-center space-x-1 mb-1">
+                      <span className="text-white">Rated</span>
+                      {[1, 2, 3, 4, 5].map((star) => (
+                        <Star key={star} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                      ))}
+                      <span className="text-white">by</span>
+                    </div>
+                    <div className="text-apple-gray-300">50+ founders.</div>
+                  </div>
+                </div>
               </div>
             </div>
-            <p className="text-xl font-semibold text-white mt-8">
-              Ifunanya doesn't just teach—<strong>she ships</strong>.
-            </p>
+
+            {/* Right Side - Profile Image */}
+            <div className="flex justify-center lg:justify-end">
+              <div className="relative">
+                <div className="w-80 h-96 bg-gradient-to-br from-apple-gray-700 to-apple-gray-800 rounded-2xl overflow-hidden">
+                  <div className="w-full h-full bg-apple-gray-600 flex items-center justify-center text-apple-gray-400">
+                    <span className="text-lg">Instructor Photo</span>
+                  </div>
+                </div>
+                {/* Bottom CTA */}
+                <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 whitespace-nowrap">
+                  <div className="bg-apple-gray-800 border border-apple-gray-700 rounded-full px-6 py-3 text-sm text-apple-gray-300 hover:bg-apple-gray-700 transition-colors cursor-pointer">
+                    → Now it's your turn. Let's talk.
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -308,26 +356,59 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Testimonials */}
+      {/* Testimonials - Matching Image 1 Layout */}
       <section className="px-6 py-20">
-        <div className="mx-auto max-w-6xl">
-          <h2 className="text-3xl lg:text-4xl font-bold text-center mb-16">
-            🙌 What Others Are Saying
+        <div className="mx-auto max-w-4xl text-center">
+          <h2 className="text-4xl lg:text-5xl font-light text-white mb-16 leading-tight">
+            50+ founders trust me to<br />
+            help them launch their apps.
           </h2>
-          <div className="grid lg:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <Card key={index} className="apple-card">
-                <CardContent className="p-8">
-                  <blockquote className="text-apple-gray-300 mb-6 leading-relaxed">
-                    "{testimonial.quote}"
-                  </blockquote>
-                  <div>
-                    <p className="font-semibold text-white">{testimonial.author}</p>
-                    <p className="text-apple-gray-400 text-sm">{testimonial.role}</p>
-                  </div>
-                </CardContent>
-              </Card>
+          
+          {/* Star Rating */}
+          <div className="flex justify-center items-center space-x-1 mb-12">
+            {[1, 2, 3, 4, 5].map((star) => (
+              <Star key={star} className="w-6 h-6 fill-yellow-400 text-yellow-400" />
             ))}
+          </div>
+
+          {/* Main Testimonial */}
+          <div className="mb-12">
+            <blockquote className="text-xl lg:text-2xl text-apple-gray-300 font-light leading-relaxed mb-8 max-w-3xl mx-auto">
+              "I didn't realize how much I was leaving on the table until I learned how to properly position myself. Huge difference!"
+            </blockquote>
+            
+            {/* Author Info */}
+            <div className="flex items-center justify-center space-x-4">
+              <div className="w-12 h-12 rounded-full bg-apple-gray-600 border-2 border-apple-gray-500"></div>
+              <div className="text-left">
+                <p className="text-white font-medium">Chidera O.</p>
+                <p className="text-apple-gray-400 text-sm">First-Time Founder</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Avatar Grid */}
+          <div className="flex justify-center items-center space-x-4 mb-4">
+            <div className="flex space-x-2">
+              <div className="w-10 h-10 rounded-full bg-apple-gray-600 border border-apple-gray-500"></div>
+              <div className="w-10 h-10 rounded-full bg-apple-gray-600 border border-apple-gray-500"></div>
+              <div className="w-10 h-10 rounded-full bg-apple-gray-600 border border-apple-gray-500"></div>
+              <div className="w-10 h-10 rounded-full bg-apple-gray-600 border border-apple-gray-500"></div>
+              <div className="w-10 h-10 rounded-full bg-apple-gray-600 border border-apple-gray-500"></div>
+              <div className="w-10 h-10 rounded-full bg-apple-gray-600 border border-apple-gray-500"></div>
+            </div>
+            <div className="w-8 h-8 rounded-full bg-apple-gray-700 border border-apple-gray-600 flex items-center justify-center">
+              <ArrowDown className="w-4 h-4 text-apple-gray-400 rotate-180" />
+            </div>
+            <div className="w-10 h-10 rounded-full bg-apple-gray-600 border border-apple-gray-500"></div>
+          </div>
+
+          {/* Second Row of Avatars */}
+          <div className="flex justify-center space-x-2">
+            <div className="w-10 h-10 rounded-full bg-apple-gray-600 border border-apple-gray-500"></div>
+            <div className="w-10 h-10 rounded-full bg-apple-gray-600 border border-apple-gray-500"></div>
+            <div className="w-10 h-10 rounded-full bg-apple-gray-600 border border-apple-gray-500"></div>
+            <div className="w-10 h-10 rounded-full bg-apple-gray-600 border border-apple-gray-500"></div>
           </div>
         </div>
       </section>
