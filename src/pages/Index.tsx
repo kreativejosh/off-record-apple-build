@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { ArrowDown } from "lucide-react";
 
 const Index = () => {
   const features = [
@@ -69,30 +70,65 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      {/* Navigation */}
+      <nav className="px-6 py-6">
+        <div className="mx-auto max-w-7xl flex justify-between items-center">
+          <div className="text-xl font-medium text-white">
+            Off-Record Academy
+          </div>
+          <div className="hidden md:flex space-x-8 text-sm text-apple-gray-300">
+            <a href="#" className="hover:text-white transition-colors">Projects</a>
+            <a href="#" className="hover:text-white transition-colors">About</a>
+            <a href="#" className="hover:text-white transition-colors">News</a>
+            <a href="#" className="hover:text-white transition-colors">Contact</a>
+            <a href="#" className="hover:text-white transition-colors">Services</a>
+          </div>
+        </div>
+      </nav>
+
       {/* Hero Section */}
-      <section className="relative px-6 py-20 lg:py-32">
-        <div className="mx-auto max-w-4xl text-center">
-          <div className="animate-fade-in">
-            <h1 className="text-5xl lg:text-7xl font-bold tracking-tight mb-8">
-              <span className="apple-text-gradient">Off-Record Academy</span>
+      <section className="relative px-6 min-h-[90vh] flex items-end">
+        <div className="mx-auto max-w-7xl w-full relative">
+          {/* Tool Logos - Left Side */}
+          <div className="absolute left-0 top-1/2 -translate-y-1/2 space-y-8">
+            <div className="text-sm text-apple-gray-400 opacity-60">Framer</div>
+            <div className="text-sm text-apple-gray-400 opacity-60">Webflow</div>
+            <div className="text-sm text-apple-gray-400 opacity-60">WordPress</div>
+            <div className="text-sm text-apple-gray-400 opacity-60">Lovable.dev</div>
+            <div className="text-sm text-apple-gray-400 opacity-60">Bolt.new</div>
+            <div className="text-sm text-apple-gray-400 opacity-60">Cursor.com</div>
+            <div className="text-sm text-apple-gray-400 opacity-60">Replit.com</div>
+            <div className="text-sm text-apple-gray-400 opacity-60">V0</div>
+          </div>
+
+          {/* Circular Arrow - Right Side */}
+          <div className="absolute right-0 top-1/2 -translate-y-1/2">
+            <div className="w-16 h-16 border border-apple-gray-600 rounded-full flex items-center justify-center">
+              <ArrowDown className="w-6 h-6 text-apple-gray-400" />
+            </div>
+          </div>
+
+          {/* Main Content - Bottom Left */}
+          <div className="pb-20 max-w-4xl">
+            <h1 className="text-6xl lg:text-8xl font-light tracking-tight text-white mb-8 leading-none">
+              The zero to one<br />
+              hundred studio.
             </h1>
-            <p className="text-2xl lg:text-3xl font-semibold text-apple-gray-300 mb-6">
-              Launch Your App in 6 Weeks
+            <div className="w-full h-px bg-apple-gray-600 mb-8"></div>
+            <p className="text-xl lg:text-2xl text-apple-gray-300 font-light leading-relaxed max-w-3xl">
+              Strategic branding, <span className="underline">websites</span>, <span className="underline">digital products</span> and growth<br />
+              for forward-thinking brands.
             </p>
-            <p className="text-lg lg:text-xl text-apple-gray-400 max-w-3xl mx-auto mb-12 leading-relaxed">
-              Turn your idea into a market-ready app using AI-powered no-code tools—no coding, no stress, no big budgets. Just results.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="apple-button text-lg px-10 py-5">
-                Join the Academy
-              </button>
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="text-lg px-10 py-5 border-apple-gray-600 text-apple-gray-300 hover:bg-apple-gray-800 hover:text-white"
-              >
-                Learn More
-              </Button>
+          </div>
+
+          {/* Bottom Status Bar */}
+          <div className="absolute bottom-8 right-8 flex items-center space-x-4 text-sm text-apple-gray-400">
+            <div className="flex items-center space-x-2">
+              <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+              <span>Let's dive in</span>
+            </div>
+            <div className="bg-apple-gray-800 px-3 py-1 rounded text-xs">
+              Now booking 2024 projects ↗
             </div>
           </div>
         </div>
