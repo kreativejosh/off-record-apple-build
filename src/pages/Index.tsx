@@ -100,6 +100,76 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Course Fee Section */}
+      <section className="py-20 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-5xl md:text-6xl font-bold mb-4">
+              Course Fee
+            </h2>
+            <p className="text-xl text-muted-foreground">
+              Invest in your future with our comprehensive AI development program
+            </p>
+          </div>
+
+          <div className="max-w-md mx-auto">
+            <div className="bg-white rounded-3xl p-8 shadow-lg border">
+              <div className="text-center mb-8">
+                <div className="text-6xl font-bold text-black mb-2">$497</div>
+                <div className="text-gray-600 text-lg">One-time payment</div>
+              </div>
+              
+              <div className="space-y-4 mb-8">
+                <div className="flex items-center gap-3">
+                  <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
+                    <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <span className="text-gray-700">Lifetime access to all course materials</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
+                    <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <span className="text-gray-700">Real-world project portfolio</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
+                    <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <span className="text-gray-700">Expert mentorship and guidance</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
+                    <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <span className="text-gray-700">Community access</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-5 h-5 bg-green-500 rounded-full flex items-center justify-center">
+                    <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <span className="text-gray-700">30-day money-back guarantee</span>
+                </div>
+              </div>
+              
+              <Button size="lg" className="w-full">
+                Enroll Now
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Pricing Section */}
       <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
@@ -260,6 +330,41 @@ const Index = () => {
                   Reserve for September →
                 </Button>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* New CTA Section */}
+      <section className="py-20 px-4 bg-gray-50">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-black">
+            Ready to Transform Your Career?
+          </h2>
+          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+            Join thousands of developers who have already mastered AI development and are building the future of technology.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" className="px-8">
+              Start Learning Today
+            </Button>
+            <Button variant="outline" size="lg" className="px-8">
+              View Course Curriculum
+            </Button>
+          </div>
+          
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="text-3xl font-bold text-black mb-2">5,000+</div>
+              <div className="text-gray-600">Students Enrolled</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-black mb-2">4.9/5</div>
+              <div className="text-gray-600">Average Rating</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-black mb-2">95%</div>
+              <div className="text-gray-600">Completion Rate</div>
             </div>
           </div>
         </div>
