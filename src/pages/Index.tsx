@@ -410,56 +410,116 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Pricing */}
-      <section className="px-6 py-20">
+      {/* Pricing Section - Replacing CTA */}
+      <section className="px-6 py-20 bg-black">
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-3xl lg:text-4xl font-bold text-center mb-16">
-            💳 Course Plans
-          </h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card className="apple-card">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold mb-4 text-white">Do-It-Yourself</h3>
-                <div className="text-3xl font-bold mb-6 text-apple-blue-500">
-                  ₦200,000 / $499
-                </div>
-                <ul className="space-y-3 text-apple-gray-300 mb-8">
-                  <li>• Full access to 6-week course</li>
-                  <li>• Lifetime access to video lessons</li>
-                  <li>• Weekly templates and build guides</li>
-                  <li>• Access to private founder community</li>
-                  <li>• AI tool tutorials (Bolt.new, Replit, etc.)</li>
-                </ul>
-                <p className="text-sm text-apple-gray-400 mb-6">
-                  Perfect if you love to learn solo and build at your pace.
-                </p>
-                <button className="apple-button w-full">
-                  Choose DIY
-                </button>
-              </CardContent>
-            </Card>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-light text-white mb-4">
+              Course <span className="text-orange-400">Fee</span>
+            </h2>
+            <p className="text-lg text-apple-gray-300 max-w-2xl mx-auto">
+              Choose the plan that fits your learning style and goals
+            </p>
+          </div>
 
-            <Card className="apple-card border-apple-blue-500/50 apple-glow">
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-bold mb-4 text-white">Collaborate</h3>
-                <div className="text-3xl font-bold mb-6 text-apple-blue-500">
-                  ₦350,000 / $749
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* DIY Plan */}
+            <div className="bg-white rounded-3xl p-8 text-black relative">
+              <div className="absolute top-8 right-8">
+                <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center">
+                  <div className="w-6 h-6 bg-gray-400 rounded-full"></div>
                 </div>
-                <ul className="space-y-3 text-apple-gray-300 mb-8">
-                  <li>• Everything in DIY <strong>plus:</strong></li>
-                  <li>• Weekly live check-ins with Ifunanya</li>
-                  <li>• Personalized MVP feedback</li>
-                  <li>• One collaborative co-building session</li>
-                  <li>• Access to private Slack for 1-on-1 support</li>
-                </ul>
-                <p className="text-sm text-apple-gray-400 mb-6">
-                  Ideal if you want expert guidance and accountability.
-                </p>
-                <button className="apple-button w-full">
-                  Choose Collaborate
-                </button>
-              </CardContent>
-            </Card>
+              </div>
+              
+              <h3 className="text-3xl font-bold mb-4">Do-It-Yourself</h3>
+              <div className="text-4xl font-bold mb-6">
+                ₦200,000
+                <span className="text-lg font-normal text-gray-600 ml-2">/ $499</span>
+              </div>
+              
+              <ul className="space-y-4 mb-8 text-gray-700">
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                  Full access to 6-week course
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                  Lifetime access to video lessons
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                  Weekly templates and build guides
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                  Access to private founder community
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                  AI tool tutorials (Bolt.new, Replit, etc.)
+                </li>
+              </ul>
+              
+              <p className="text-sm text-gray-600 mb-8 italic">
+                Perfect if you love to learn solo and build at your pace.
+              </p>
+              
+              <button className="w-full bg-black text-white py-4 rounded-full font-semibold hover:bg-gray-800 transition-colors">
+                Choose DIY
+              </button>
+            </div>
+
+            {/* Collaborate Plan */}
+            <div className="bg-white rounded-3xl p-8 text-black relative border-4 border-orange-400">
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2">
+                <div className="bg-orange-400 text-white px-6 py-2 rounded-full text-sm font-semibold">
+                  RECOMMENDED
+                </div>
+              </div>
+              
+              <div className="absolute top-8 right-8">
+                <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center">
+                  <div className="w-6 h-6 bg-orange-400 rounded-full"></div>
+                </div>
+              </div>
+              
+              <h3 className="text-3xl font-bold mb-4">Collaborate</h3>
+              <div className="text-4xl font-bold mb-6">
+                ₦350,000
+                <span className="text-lg font-normal text-gray-600 ml-2">/ $749</span>
+              </div>
+              
+              <ul className="space-y-4 mb-8 text-gray-700">
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                  Everything in DIY <strong>plus:</strong>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                  Weekly live check-ins with Ifunanya
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                  Personalized MVP feedback
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                  One collaborative co-building session
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                  Access to private Slack for 1-on-1 support
+                </li>
+              </ul>
+              
+              <p className="text-sm text-gray-600 mb-8 italic">
+                Ideal if you want expert guidance and accountability.
+              </p>
+              
+              <button className="w-full bg-black text-white py-4 rounded-full font-semibold hover:bg-gray-800 transition-colors">
+                Choose Collaborate
+              </button>
+            </div>
           </div>
         </div>
       </section>
