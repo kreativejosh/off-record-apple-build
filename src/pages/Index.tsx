@@ -199,26 +199,51 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Problem Section */}
+      {/* Problem Section - Updated to match image 1 */}
       <section className="px-6 py-20">
-        <div className="mx-auto max-w-4xl">
-          <div className="apple-card animate-scale-in">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-8 text-center">
-              💥 The Problem
+        <div className="mx-auto max-w-7xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-6xl font-light text-white mb-6 leading-tight">
+              Discover <span className="text-orange-400">the art of</span><br />
+              <span className="text-orange-400">no-code development</span> with us
             </h2>
-            <div className="space-y-4 text-lg text-apple-gray-300 leading-relaxed">
-              <p>You've got the idea, but launching feels like climbing Everest.</p>
-              <p>Hiring devs? Expensive. Learning to code? Time-consuming.</p>
-              <p>And let's not talk about those failed half-baked prototypes sitting in your Google Drive.</p>
-              <p className="text-xl font-semibold text-white mt-8">
-                <strong>Truth is:</strong> Building your MVP shouldn't be a drama series.
-              </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            {/* Left Side - Content Card */}
+            <div className="bg-white rounded-3xl p-12 text-black">
+              <div className="space-y-6">
+                <p className="text-lg leading-relaxed">
+                  At Off-Record Academy, we offer comprehensive no-code development courses designed for all major AI tools – from Bolt.new to Lovable.dev to Replit. Master the skills to create stunning applications, regardless of the tools you use.
+                </p>
+                
+                <button className="bg-black text-white px-8 py-4 rounded-full font-medium hover:bg-gray-800 transition-colors">
+                  JOIN NOW
+                </button>
+              </div>
+            </div>
+
+            {/* Right Side - Founder Section */}
+            <div className="space-y-6">
+              <div className="text-sm text-apple-gray-400 uppercase tracking-wider">FOUNDER</div>
+              
+              {/* Profile Image Placeholder */}
+              <div className="w-full h-96 bg-gradient-to-br from-apple-gray-700 to-apple-gray-800 rounded-2xl overflow-hidden mb-6">
+                <div className="w-full h-full bg-apple-gray-600 flex items-center justify-center text-apple-gray-400">
+                  <span className="text-lg">Founder Photo</span>
+                </div>
+              </div>
+
+              {/* Quote */}
+              <blockquote className="text-lg text-apple-gray-300 leading-relaxed">
+                "Building apps isn't just technical, it's creative. Our courses empower you to tell impactful stories through any no-code platform."
+              </blockquote>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Solution Section - Updated to match image 1 layout */}
+      {/* Solution Section - Benefits */}
       <section className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
           <div className="text-center mb-16">
@@ -246,7 +271,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Instructor Section - Keep existing */}
+      {/* Instructor Section */}
       <section className="px-6 py-20">
         <div className="mx-auto max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -323,7 +348,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Curriculum Section - New section matching image 3 */}
+      {/* Curriculum Section */}
       <section className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
           <div className="text-center mb-16">
@@ -439,7 +464,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Testimonials - Keep existing */}
+      {/* Testimonials */}
       <section className="px-6 py-20">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-4xl lg:text-5xl font-light text-white mb-16 leading-tight">
@@ -496,7 +521,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* FAQ Section - New section matching image 4 */}
+      {/* FAQ Section */}
       <section className="px-6 py-20">
         <div className="mx-auto max-w-4xl">
           <div className="text-center mb-16">
@@ -559,12 +584,48 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="px-6 py-12 border-t border-apple-gray-800">
-        <div className="mx-auto max-w-4xl text-center">
-          <p className="text-apple-gray-500">
-            © 2024 Off-Record Academy. All rights reserved.
-          </p>
+      {/* Footer - Updated to match image 2 */}
+      <footer className="relative overflow-hidden bg-background border-t border-apple-gray-800">
+        {/* Scrolling Text Animation */}
+        <div className="py-12">
+          <div className="flex whitespace-nowrap animate-[scroll_20s_linear_infinite]">
+            <div className="flex items-center space-x-8 text-6xl lg:text-8xl font-bold text-white">
+              <span className="flex items-center space-x-8">
+                <div className="w-4 h-4 bg-white rounded-full"></div>
+                <span>Get started</span>
+                <div className="w-4 h-4 bg-white rounded-full"></div>
+                <span>Get started</span>
+                <div className="w-4 h-4 bg-white rounded-full"></div>
+                <span>Get started</span>
+                <div className="w-4 h-4 bg-white rounded-full"></div>
+                <span>Get started</span>
+                <div className="w-4 h-4 bg-white rounded-full"></div>
+                <span>Get started</span>
+                <div className="w-4 h-4 bg-white rounded-full"></div>
+                <span>Get started</span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        {/* Footer Links */}
+        <div className="px-6 py-8 border-t border-apple-gray-800">
+          <div className="mx-auto max-w-7xl flex justify-between items-center">
+            <div className="flex space-x-8 text-sm text-apple-gray-400">
+              <a href="#" className="hover:text-white transition-colors">Twitter / X</a>
+              <a href="#" className="hover:text-white transition-colors">hello@offrecord.com</a>
+              <a href="#" className="hover:text-white transition-colors">LinkedIn</a>
+            </div>
+            
+            <div className="flex items-center space-x-4">
+              <button className="bg-white text-black px-6 py-2 rounded-full text-sm font-medium hover:bg-gray-200 transition-colors">
+                Get it for $499
+              </button>
+              <div className="text-xs text-apple-gray-500">
+                Made in Lovable
+              </div>
+            </div>
+          </div>
         </div>
       </footer>
     </div>

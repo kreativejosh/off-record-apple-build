@@ -92,3 +92,13 @@
     @apply hover:bg-apple-gray-800/50 hover:border-apple-gray-700;
   }
 }
+
+/* Scrolling animation for footer */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
