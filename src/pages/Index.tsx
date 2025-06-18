@@ -1,29 +1,39 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowDown, Star } from "lucide-react";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { ArrowDown, Star, Zap, Shield, Users, Rocket, Target, BookOpen } from "lucide-react";
 
 const Index = () => {
   const features = [
     {
       title: "Save Big",
-      icon: "💸",
+      icon: <Zap className="w-8 h-8 text-white" />,
       description: "No need for a dev team. Use AI no-code tools like Bolt.new, Lovable.dev, and Replit to build fast and smart."
     },
     {
       title: "Move Fast",
-      icon: "⚡",
+      icon: <Rocket className="w-8 h-8 text-white" />,
       description: "Go from idea to prototype in days. Validate before you waste time and money."
     },
     {
       title: "Build Secure",
-      icon: "🛡️",
+      icon: <Shield className="w-8 h-8 text-white" />,
       description: "Learn to build growth-ready apps that don't fall apart or get hacked."
     },
     {
       title: "Build with Others",
-      icon: "🤝",
+      icon: <Users className="w-8 h-8 text-white" />,
       description: "Join a founder-friendly, fluff-free community of dreamers and doers."
+    },
+    {
+      title: "Launch Smart",
+      icon: <Target className="w-8 h-8 text-white" />,
+      description: "Map your go-to-market strategy + create content with AI to reach real users."
+    },
+    {
+      title: "Scale Right",
+      icon: <BookOpen className="w-8 h-8 text-white" />,
+      description: "Build foundations that grow with you—no technical debt, no shortcuts."
     }
   ];
 
@@ -31,22 +41,77 @@ const Index = () => {
     {
       title: "Ideation Station",
       description: "Use AI tools to validate ideas before wasting time.",
-      benefit: "Build what people actually want."
+      benefit: "Build what people actually want.",
+      chapter: "CHAPTER 1",
+      videos: "12 VIDEOS",
+      hours: "8 HOURS"
     },
     {
       title: "Build Like a Pro",
       description: "Design and build functional apps with no-code tools.",
-      benefit: "Launch clean, smart products—fast."
+      benefit: "Launch clean, smart products—fast.",
+      chapter: "CHAPTER 2", 
+      videos: "18 VIDEOS",
+      hours: "12 HOURS"
     },
     {
       title: "Fort Knox Your App",
       description: "Prompt AI to build secure, reliable apps that scale.",
-      benefit: "Avoid the \"Oops we got hacked\" story."
+      benefit: "Avoid the \"Oops we got hacked\" story.",
+      chapter: "CHAPTER 3",
+      videos: "15 VIDEOS", 
+      hours: "10 HOURS"
     },
     {
       title: "Launch to the Stars",
       description: "Map your go-to-market strategy + create content with AI.",
-      benefit: "Get real users, test, and grow."
+      benefit: "Get real users, test, and grow.",
+      chapter: "CHAPTER 4",
+      videos: "20 VIDEOS",
+      hours: "14 HOURS"
+    }
+  ];
+
+  const faqItems = [
+    {
+      question: "What types of apps can I build with no-code tools?",
+      answer: "You can build web applications, SaaS products, marketplaces, social platforms, and more using AI-powered no-code tools like Bolt.new, Lovable.dev, and Replit."
+    },
+    {
+      question: "How does the mentorship feature work?",
+      answer: "In the Collaborate plan, you get weekly live check-ins with Ifunanya, personalized MVP feedback, and access to private Slack for 1-on-1 support throughout your journey."
+    },
+    {
+      question: "What AI tools are covered in the courses?",
+      answer: "We cover Bolt.new, Lovable.dev, Replit, Cursor.com, V0, and other cutting-edge AI development tools to help you build without traditional coding."
+    },
+    {
+      question: "Do I need prior experience to join these courses?",
+      answer: "No prior coding experience required! This course is designed for founders and entrepreneurs who want to build their ideas without learning traditional programming."
+    },
+    {
+      question: "Can I access course materials at any time?",
+      answer: "Yes! You get lifetime access to all video lessons, templates, and build guides. Learn at your own pace and revisit materials whenever needed."
+    },
+    {
+      question: "Will I get a certificate after completing the course?",
+      answer: "Yes, you'll receive a completion certificate and join our exclusive founder community where you can continue building and collaborating."
+    },
+    {
+      question: "Is there support outside of the live sessions?",
+      answer: "Absolutely! DIY plan includes access to our private founder community, while Collaborate plan adds private Slack access for direct support."
+    },
+    {
+      question: "Are there any resources to help build a portfolio?",
+      answer: "Yes! You'll build a fully functional MVP during the course, plus get templates and guides to showcase your work to potential users and investors."
+    },
+    {
+      question: "Can I get a refund if I'm not satisfied with the course?",
+      answer: "We stand behind our course quality. Contact us within 14 days if you're not satisfied, and we'll work with you to make it right."
+    },
+    {
+      question: "How often are new lessons or updates added?",
+      answer: "We regularly update course content to reflect the latest AI tools and no-code developments. All updates are included with your lifetime access."
     }
   ];
 
@@ -153,26 +218,27 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Solution Section */}
+      {/* Solution Section - Updated to match image 1 layout */}
       <section className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-              ✅ The Off-Record Solution
+            <div className="text-sm text-apple-gray-400 uppercase tracking-wider mb-4">Benefits</div>
+            <h2 className="text-4xl lg:text-5xl font-light mb-6 text-white leading-tight">
+              Subscription benefits
             </h2>
-            <p className="text-lg lg:text-xl text-apple-gray-300 max-w-4xl mx-auto leading-relaxed">
-              <strong>Off-Record Academy</strong> is your fast lane from "napkin sketch" to "real product"—even if you're not a techie.
-              Over 6 weeks, you'll ideate, build, and launch a secure, functional MVP using powerful AI tools—all without writing a single line of code.
+            <p className="text-lg text-apple-gray-300 max-w-3xl mx-auto leading-relaxed">
+              Explore the Advantages of Subscribing. Elevate Your Experience<br />
+              with Exclusive Benefits and Perks!
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             {features.map((feature, index) => (
-              <Card key={index} className="apple-card group cursor-pointer">
-                <CardContent className="p-8">
-                  <div className="text-4xl mb-4">{feature.icon}</div>
+              <Card key={index} className="apple-card group cursor-pointer border-apple-gray-800 bg-apple-gray-900/50">
+                <CardContent className="p-8 text-center">
+                  <div className="mb-6 flex justify-center">{feature.icon}</div>
                   <h3 className="text-xl font-semibold mb-4 text-white">{feature.title}</h3>
-                  <p className="text-apple-gray-300 leading-relaxed">{feature.description}</p>
+                  <p className="text-apple-gray-300 leading-relaxed text-sm">{feature.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -180,7 +246,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Instructor Section - Matching Image 2 Layout */}
+      {/* Instructor Section - Keep existing */}
       <section className="px-6 py-20">
         <div className="mx-auto max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -257,29 +323,46 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Course Modules */}
+      {/* Curriculum Section - New section matching image 3 */}
       <section className="px-6 py-20">
         <div className="mx-auto max-w-6xl">
-          <h2 className="text-3xl lg:text-4xl font-bold text-center mb-16">
-            📚 What You'll Learn
-          </h2>
-          <div className="grid gap-6">
+          <div className="text-center mb-16">
+            <div className="text-sm text-apple-gray-400 uppercase tracking-wider mb-4">Curriculum</div>
+            <h2 className="text-4xl lg:text-5xl font-light mb-6 text-white leading-tight">
+              Complete no-code development<br />
+              curriculum to <span className="text-orange-400">build skills</span> and<br />
+              <span className="text-orange-400">launch your career</span>
+            </h2>
+          </div>
+
+          <div className="space-y-8">
             {modules.map((module, index) => (
-              <Card key={index} className="apple-card">
-                <CardContent className="p-8 flex flex-col md:flex-row md:items-center md:justify-between">
-                  <div className="md:flex-1">
-                    <h3 className="text-xl font-semibold mb-3 text-white">{module.title}</h3>
-                    <p className="text-apple-gray-300 mb-4 md:mb-0">{module.description}</p>
+              <div key={index} className="grid lg:grid-cols-2 gap-12 items-center py-8 border-b border-apple-gray-800 last:border-b-0">
+                <div className="space-y-4">
+                  <div className="text-sm text-apple-gray-400 uppercase tracking-wider">
+                    {module.chapter} | {module.videos} | {module.hours}
                   </div>
-                  <div className="md:flex-1 md:text-right">
-                    <p className="text-apple-blue-500 font-medium">{module.benefit}</p>
+                  <h3 className="text-2xl lg:text-3xl font-light text-white mb-4">
+                    {module.title}
+                  </h3>
+                  <p className="text-apple-gray-300 leading-relaxed">
+                    {module.description}
+                  </p>
+                </div>
+                <div className="flex justify-center lg:justify-end">
+                  <div className="w-80 h-48 bg-gradient-to-br from-apple-gray-800 to-apple-gray-900 rounded-lg overflow-hidden">
+                    <div className="w-full h-full bg-apple-gray-700 flex items-center justify-center text-apple-gray-400">
+                      <span className="text-sm">Course Preview {index + 1}</span>
+                    </div>
                   </div>
-                </CardContent>
-              </Card>
+                </div>
+              </div>
             ))}
           </div>
         </div>
       </section>
+
+      {/* Course Modules - Remove this section as it's replaced by Curriculum */}
 
       {/* Outcomes */}
       <section className="px-6 py-20">
@@ -356,7 +439,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Testimonials - Matching Image 1 Layout */}
+      {/* Testimonials - Keep existing */}
       <section className="px-6 py-20">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-4xl lg:text-5xl font-light text-white mb-16 leading-tight">
@@ -409,6 +492,46 @@ const Index = () => {
             <div className="w-10 h-10 rounded-full bg-apple-gray-600 border border-apple-gray-500"></div>
             <div className="w-10 h-10 rounded-full bg-apple-gray-600 border border-apple-gray-500"></div>
             <div className="w-10 h-10 rounded-full bg-apple-gray-600 border border-apple-gray-500"></div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section - New section matching image 4 */}
+      <section className="px-6 py-20">
+        <div className="mx-auto max-w-4xl">
+          <div className="text-center mb-16">
+            <div className="text-sm text-apple-gray-400 uppercase tracking-wider mb-4">FAQ</div>
+            <h2 className="text-4xl lg:text-5xl font-light text-white mb-6">
+              Frequently asked <span className="text-orange-400">questions</span>
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-x-12 gap-y-6">
+            <Accordion type="single" collapsible className="space-y-4">
+              {faqItems.slice(0, 5).map((item, index) => (
+                <AccordionItem key={index} value={`item-${index}`} className="border-b border-apple-gray-800">
+                  <AccordionTrigger className="text-left text-white hover:text-apple-gray-300 hover:no-underline py-4">
+                    {item.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-apple-gray-300 pb-4">
+                    {item.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+
+            <Accordion type="single" collapsible className="space-y-4">
+              {faqItems.slice(5).map((item, index) => (
+                <AccordionItem key={index + 5} value={`item-${index + 5}`} className="border-b border-apple-gray-800">
+                  <AccordionTrigger className="text-left text-white hover:text-apple-gray-300 hover:no-underline py-4">
+                    {item.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-apple-gray-300 pb-4">
+                    {item.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
           </div>
         </div>
       </section>
