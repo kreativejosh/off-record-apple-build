@@ -387,7 +387,62 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Course Modules - Remove this section as it's replaced by Curriculum */}
+      {/* How Does It Work Section */}
+      <section className="px-6 py-20 bg-black">
+        <div className="mx-auto max-w-6xl text-center">
+          <div className="mb-16">
+            <h3 className="text-lg text-apple-gray-400 mb-8">how does it work?</h3>
+            <h2 className="text-4xl lg:text-6xl font-light text-white mb-8 leading-tight">
+              every week, we have<br />
+              1 lecture, 1 talk and<br />
+              1 weekly update.
+            </h2>
+            <p className="text-lg text-apple-gray-300 max-w-4xl mx-auto leading-relaxed mb-8">
+              you're in control of your journey. choose your project, build with purpose, and ship 
+              something lovable. we'll be alongside you with guidance, feedback, and a supportive 
+              community of builders making progress together.
+            </p>
+            <div className="mb-16">
+              <span className="text-apple-gray-400">have questions? </span>
+              <a href="#" className="text-white underline">explore our faqs</a>
+            </div>
+          </div>
+
+          {/* Weekly Timeline */}
+          <div className="flex justify-center items-center space-x-8 lg:space-x-16">
+            <div className="text-center">
+              <div className="text-sm text-apple-gray-400 mb-2">week 1</div>
+              <div className="text-xl text-white font-light">ideate</div>
+              <div className="w-2 h-2 bg-white rounded-full mx-auto mt-4"></div>
+            </div>
+            <div className="text-center">
+              <div className="text-sm text-apple-gray-400 mb-2">week 2</div>
+              <div className="text-xl text-white font-light">build</div>
+              <div className="w-2 h-2 bg-white rounded-full mx-auto mt-4"></div>
+            </div>
+            <div className="text-center">
+              <div className="text-sm text-apple-gray-400 mb-2">week 3</div>
+              <div className="text-xl text-white font-light">feedback</div>
+              <div className="w-2 h-2 bg-white rounded-full mx-auto mt-4"></div>
+            </div>
+            <div className="text-center">
+              <div className="text-sm text-apple-gray-400 mb-2">week 4</div>
+              <div className="text-xl text-white font-light">iterate</div>
+              <div className="w-2 h-2 bg-white rounded-full mx-auto mt-4"></div>
+            </div>
+            <div className="text-center">
+              <div className="text-sm text-apple-gray-400 mb-2">week 5</div>
+              <div className="text-xl text-white font-light">launch</div>
+              <div className="w-2 h-2 bg-white rounded-full mx-auto mt-4"></div>
+            </div>
+            <div className="text-center">
+              <div className="text-sm text-apple-gray-400 mb-2">week 6</div>
+              <div className="text-xl text-white font-light">showcase</div>
+              <div className="w-2 h-2 bg-white rounded-full mx-auto mt-4"></div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Outcomes */}
       <section className="px-6 py-20">
@@ -621,26 +676,18 @@ const Index = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="px-6 py-20">
-        <div className="mx-auto max-w-4xl">
-          <div className="apple-card text-center apple-glow">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-              👇 Ready to Launch <em>Your</em> App?
-            </h2>
-            <p className="text-lg text-apple-gray-300 mb-4">
-              Your idea deserves to live outside your head.
-            </p>
-            <p className="text-lg text-apple-gray-300 mb-8">
-              Join <strong>Off-Record Academy</strong> and bring it to life—faster, smarter, and on your own terms.
-            </p>
-            <p className="text-xl font-semibold text-apple-blue-500 mb-8">
-              🚀 Limited spots. Enroll now before it fills up.
-            </p>
-            <button className="apple-button text-xl px-12 py-6">
-              👉 Join the Academy
-            </button>
-          </div>
+      {/* CTA Section - Updated to match the image design */}
+      <section className="px-6 py-20 bg-black">
+        <div className="mx-auto max-w-6xl text-center">
+          <h2 className="text-4xl lg:text-6xl font-light text-white mb-6 leading-tight">
+            stop stalling. start shipping.
+          </h2>
+          <p className="text-lg text-apple-gray-400 mb-12 max-w-3xl mx-auto">
+            applications for season 1 are now open. space is limited, so apply early.
+          </p>
+          <button className="border border-apple-gray-600 text-white px-8 py-3 rounded-md hover:bg-apple-gray-800 transition-colors">
+            apply now →
+          </button>
         </div>
       </section>
 
